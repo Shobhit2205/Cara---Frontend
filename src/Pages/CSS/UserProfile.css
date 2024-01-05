@@ -1,0 +1,61 @@
+.userProfile-container{
+    display: flex;
+    flex-direction: column;
+    min-height:91vh;
+    margin-top: 10vh;
+}
+.left{
+    width: 100%;
+    background: #1a1a1a;
+    border: 1px solid black;
+}
+
+.userProfile-container .right{
+    text-align: center;
+    width: 100%;
+}
+
+button.normal{
+    background-color: #088178;
+    color: #fff;
+    padding: 8px 30px;
+}
+
+#update-form{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    padding: 80px;
+    border: 1px solid #e1e1e1;
+    width:90%;
+}
+
+#update-form form{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#update-form form input, #update-form form select{
+    width: 100%;
+    padding: 12px 15px;
+    outline: none;
+    margin-bottom: 20px;
+    border: 1px solid #e1e1e1;
+}
+
+#update-form form button{
+    background-color: #088178;
+    color: #fff;
+}
+
+@media (max-width: 700px){
+    #update-form{
+        margin: auto;
+        padding: 10px;
+    }
+    #update-form form {
+        width: 100%;
+    }
+}

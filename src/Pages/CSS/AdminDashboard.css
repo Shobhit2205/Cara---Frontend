@@ -1,0 +1,39 @@
+.admin-container{
+    display: flex;
+    flex-direction: column;
+    min-height:91vh;
+    margin-top: 10vh;
+}
+.left{
+    width: 100%;
+    background: #1a1a1a;
+    border: 1px solid black;
+}
+
+.admin-container .right{
+    width: 100%;
+    text-align: center;
+}
+.admin-container .right h1{
+    color: #088178;
+}
+button.normal{
+    background-color: #088178;
+    color: #fff;
+    padding: 8px 30px;
+}
+ 
+
+/* @media (max-width: 1200px){
+    .admin-container .left{
+        display: none;
+    }
+
+    .admin-container .right{
+        width: 100%;
+    }
+
+    #cart table{
+        overflow-x: scroll;
+    }
+} */

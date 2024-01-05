@@ -1,0 +1,128 @@
+.product-container{
+    display: flex;
+    flex-direction: column;
+    min-height:91vh;
+    margin-top: 10vh;
+}
+.product-container .left{
+    width: 100%;
+    background: #1a1a1a;
+    border: 1px solid black;
+}
+
+.product-container .right{
+    width: 100%;
+    text-align: center;
+}
+
+.product-container .right h1{
+    color: #088178;
+}
+
+.pro-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-top: 20px;
+}
+
+#product1 .pro{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.1);
+    margin: 15px auto;
+    transition: 0.2s ease;
+    position: relative;
+}
+
+#product1 .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.2);
+}
+
+#product1 .pro img{
+    width: 100%;
+    height: 250px;
+    border-radius: 20px;
+}
+
+#product1.pro.des{
+    text-align: start;
+    padding: 10px 0;
+}
+
+#product1 .pro .des span{
+    color: #606063;
+    font-size: 12px;
+}
+
+#product1 .pro .des h5{
+    padding-top: 5px;
+    color: #1a1a1a;
+    font-size: 18px;
+}
+
+.price{
+    display: flex;
+    gap: 10px;
+}
+#product1 .pro .des h4{
+    padding-top: 5px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #088178;
+}
+#product1 .pro .des h3{
+    padding-top: 5px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #606063;
+    text-decoration: line-through;
+}
+
+.Prod-link{
+    text-decoration: none;
+}
+
+@media(max-width: 1200px){
+    .pro-container{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media(max-width: 950px){
+    .section-p1{
+        padding: 40px 40px;
+    }
+    .pro-container{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media(max-width: 950px){
+    .section-p1{
+        padding: 40px 40px;
+    }
+    .pro-container{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(max-width: 600px){
+    .section-p1{
+        padding: 15px;
+    }
+    .pro-container{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(max-width: 550px){
+
+    .pro-container{
+        grid-template-columns: 1fr;
+    }
+
+}
